@@ -1,0 +1,1 @@
+<a href="setup/reminder.apk" id="modal" download>Download apk here</a>
