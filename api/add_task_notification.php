@@ -3,7 +3,10 @@
 function android($data,$to)
 {
  
-$serverKey = "AAAAM2Omfpk:APA91bF7xuwVbmJKmyObP4VbBL0QKyAB1XtoOZBdUzj4Yc8BwH5tyEmVvtlzOs8PWi6lYstd5BViG8NhHAXtH4uTtNOD2KCO6katfNXbuDd2B2eFtPxGWtSwcLuzHahiZA-H7LpSCFi4";
+//$serverKey = "AAAAM2Omfpk:APA91bF7xuwVbmJKmyObP4VbBL0QKyAB1XtoOZBdUzj4Yc8BwH5tyEmVvtlzOs8PWi6lYstd5BViG8NhHAXtH4uTtNOD2KCO6katfNXbuDd2B2eFtPxGWtSwcLuzHahiZA-H7LpSCFi4";
+
+//Surta
+$serverKey = "BJiDyfoSdW9K6sKc8JoDyInEUpD1h7vtwHR6sDQoCLmf5qe3iPNcGU7caU3_9BPKZyw_ss9rzasBiDbtXVLVvxU";
 
 
 $title = $data['subject'];

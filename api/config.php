@@ -8,9 +8,9 @@
 	// LOCAL
 
 	// SERVER
-	  $db_name		= "vnrseed2_reminder";
-	  $mysql_username = "vnrseed2_remind";
-	  $mysql_password = "vnrremind@123";
+	  $db_name		= "surta";
+	  $mysql_username = "surta_user";
+	  $mysql_password = "surta_pass";
 	  $server_name	= "localhost";
 	// SERVER
 

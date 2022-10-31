@@ -8,9 +8,9 @@
 	// LOCAL
 
 	// SERVER
-	  $db_name		= "reminder";
-	  $mysql_username = "reminder_user";
-	  $mysql_password = "reminder@192";
+	  $db_name		= "surta";
+	  $mysql_username = "surta_user";
+	  $mysql_password = "surta_pass";
 	  $server_name	= "localhost";
 	// SERVER
 

@@ -11,8 +11,8 @@ if($_REQUEST['userid'] && $_REQUEST['userid']!='')
         
      ini_set('memory_limit', '-1');
 		
-     $conn = mysql_connect("localhost", "vnrseed2_remind", "vnrremind@123");
-     $con = mysql_select_db("vnrseed2_reminder", $conn);
+     $conn = mysql_connect("localhost", "reminder_user", "reminder@192");
+     $con = mysql_select_db("reminder", $conn);
 
      $query = mysql_query("SELECT userid, ufname, ulname, ucontact, uemail FROM user where usts='A' AND user_varified='Yes' AND utype!='A' order by ufname asc",$conn); //AND userid!=1 
 

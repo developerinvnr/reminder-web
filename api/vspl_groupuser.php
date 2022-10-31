@@ -1,7 +1,7 @@
 <?php
-$con=mysqli_connect('localhost','vnrseed2_hr','vnrhrims321');
+$con=mysqli_connect('localhost','hrims_user','hrims@192');
 if(!$con) die("Failed to connect to database!");
-$db=mysqli_select_db( $con, 'vnrseed2_hrims');
+$db=mysqli_select_db( $con, 'hrims');
 if(!$db) die("Failed to select database!");
 
 	

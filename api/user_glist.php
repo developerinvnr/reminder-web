@@ -3,8 +3,8 @@ include "db.php";
 
 if($_REQUEST['SelType']=='dept' && $_REQUEST['UserId']>0 && $_REQUEST['DeptId']>0)
 {
-   $ccon=mysql_connect('localhost','vnrseed2_hr','vnrhrims321');
-   $db=mysql_select_db('vnrseed2_hrims',$ccon);     
+   $ccon=mysql_connect('localhost','hrims_user','hrims@192');
+   $db=mysql_select_db('hrims',$ccon);     
    $query = mysql_query("SELECT CONCAT_WS( ' ', Fname, Sname, Lname ) as ufname, MobileNo_Vnr as phoneNum FROM hrm_employee_general g inner join hrm_employee e on g.EmployeeID=e.EmployeeID WHERE g.DepartmentId=".$_REQUEST['DeptId']." and e.EmpStatus='A' group by e.EmployeeID order by e.Fname", $ccon);     
   $emp = array();
   while($res = mysql_fetch_assoc($query)){ $emp[]=$res; }
@@ -46,8 +46,8 @@ elseif($_REQUEST['SelType']=='group' && $_REQUEST['Group'] && $_REQUEST['UserId'
 	  if($_REQUEST['Group']==101){ $comid=1; } 
 	  elseif($_REQUEST['Group']==102){ $comid=3; }
 	  elseif($_REQUEST['Group']==103){ $comid=2; } 
-	  $ccon=mysql_connect('localhost','vnrseed2_hr','vnrhrims321');
-      $db=mysql_select_db('vnrseed2_hrims',$ccon);
+	  $ccon=mysql_connect('localhost','hrims_user','hrims@192');
+      $db=mysql_select_db('hrims',$ccon);
       $query = mysql_query("SELECT DepartmentId as deptid,DepartmentCode as deptcode FROM hrm_department WHERE CompanyId=".$comid." and DeptStatus='A' order by DepartmentCode",$ccon);     
       $dept = array();
       while($res = mysql_fetch_assoc($query)){ $dept[]=$res; }
@@ -106,8 +106,8 @@ elseif($_REQUEST['SelType']=='group' && $_REQUEST['Group'] && $_REQUEST['UserId'
 elseif($_REQUEST['UserId']!='' && $_REQUEST['contactno']>0)
 {	
  
- $ccon=mysqli_connect('localhost','vnrseed2_hr','vnrhrims321');
- $db=mysqli_select_db( $ccon, 'vnrseed2_hrims');
+ $ccon=mysqli_connect('localhost','hrims_user','hrims@192');
+ $db=mysqli_select_db( $ccon, 'hrims');
  $query = mysqli_query($ccon, "SELECT MobileNo_Vnr FROM hrm_employee_general g inner join hrm_employee e on g.EmployeeID=e.EmployeeID WHERE e.EmpStatus='A' AND g.MobileNo_Vnr='".$_REQUEST['contactno']."'");  
  $rowno=mysqli_num_rows($query);
     

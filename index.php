@@ -74,7 +74,7 @@
 
 <body style="background-color:#D4A814;">
 <div class="login-box small_screen">
-  <div class="login-logo"><b style="font-family: Sofia;font-size: 35px;">Reminder</b></div>
+  <div class="login-logo"><b style="font-family: Sofia;font-size: 35px;">Surta</b></div>
   <div class="login-box-body" style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); border-top: 5px solid #45aef1; border-radius: 10px;">
     <?php
     if (isset($_GET['user_varified']) && $_GET['user_varified'] == "yes")

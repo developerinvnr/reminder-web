@@ -4,7 +4,7 @@
   <!-- mini logo for sidebar mini 50x50 pixels -->
   <span class="logo-mini"><img src="images/minimal.png" alt=""></span>
   <!-- logo for regular state and mobile devices -->
-  <span class="logo-lg"><b>Reminder </b><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+  <span class="logo-lg"><b>Surta </b><i class="fa fa-bell-o" aria-hidden="true"></i></span>
  </a>
 	
  <!-- Header Navbar-->

@@ -5,7 +5,7 @@
 
   <li class="treeview
   <?php
-    if($_SERVER['PHP_SELF']=='/reminder/home.php')
+    if($_SERVER['PHP_SELF']=='/home.php')
     { 
       echo 'active';
     } 
@@ -22,7 +22,7 @@
   { ?>
   <li class="treeview
   <?php
-    if($_SERVER['PHP_SELF']=='/reminder/users.php')
+    if($_SERVER['PHP_SELF']=='/users.php')
     { 
       echo 'active';
     } 
@@ -39,7 +39,7 @@
   
   <li class="treeview
   <?php
-    if($_SERVER['PHP_SELF']=='/reminder/calendar.php')
+    if($_SERVER['PHP_SELF']=='/calendar.php')
     { 
       echo 'active';
     } 
@@ -54,14 +54,14 @@
 
   <li class="treeview
   <?php
-    if($_SERVER['PHP_SELF']=='/reminder/public_reminder.php')
+    if($_SERVER['PHP_SELF']=='/public_reminder.php')
     { 
       echo 'active';
     } 
   ?>
   " onclick="FunUrl('public_reminder.php')">
     <a href="#">
-      <i class="fa fa-bell" aria-hidden="true"></i><span>Add Reminder</span>
+      <i class="fa fa-bell" aria-hidden="true"></i><span>Add Task</span>
     </a>
   </li>
 
@@ -69,7 +69,7 @@
 
   <li class="treeview
   <?php
-    if($_SERVER['PHP_SELF']=='/reminder/my_note.php')
+    if($_SERVER['PHP_SELF']=='/my_note.php')
     { 
       echo 'active';
     } 
@@ -84,7 +84,7 @@
 
   <li class="treeview
   <?php
-    if($_SERVER['PHP_SELF']=='/reminder/reports.php')
+    if($_SERVER['PHP_SELF']=='/reports.php')
     { 
       echo 'active';
     } 
@@ -99,7 +99,7 @@
 
   <li class="treeview
   <?php
-    if($_SERVER['PHP_SELF']=='/reminder/contact_list.php')
+    if($_SERVER['PHP_SELF']=='/contact_list.php')
     { 
       echo 'active';
     } 
@@ -113,7 +113,7 @@
 
   <li class="treeview
   <?php
-    if($_SERVER['PHP_SELF']=='/reminder/notification.php')
+    if($_SERVER['PHP_SELF']=='/notification.php')
     { 
       echo 'active';
     } 
